@@ -18,7 +18,7 @@ const {width, height} = Dimensions.get('window')
 
 export default class Kag5 extends React.Component {
   static navigationOptions = {
-    title: '14 x3/12 x3',
+    title: '11 x3/9 x3',
   };
   constructor(props) {
     super(props);
@@ -29,24 +29,24 @@ export default class Kag5 extends React.Component {
       NumberHolderD20S1 : 'REG',
       NumberHolderD20S2 : 'REG',
       NumberHolderD20S3 : 'REG',
-      NumberHolderD8S1 : 6,
-      NumberHolderD8S3 : 6,
-      NumberHolderD8S2 : 8,
-      NumberHolderTotalS1 : 'DAM',
-      NumberHolderTotalS2 : 'DAM',
-      NumberHolderTotalS3 : 'DAM',
-      NumberHolderTotalD20S1 : 'T20',
-      NumberHolderTotalD20S2 : 'T20',
-      NumberHolderTotalD20S3 : 'T20',
       NumberHolderD20S4 : 'PA',
       NumberHolderD20S5 : 'PA',
       NumberHolderD20S6 : 'PA',
-      NumberHolderD8S4 : 8,
-      NumberHolderD8S5 : 8,
-      NumberHolderD8S6 : 8,
+      NumberHolderD6S1 : 6,
+      NumberHolderD6S3 : 6,
+      NumberHolderD6S2 : 6,
+      NumberHolderD6S4 : 6,
+      NumberHolderD6S5 : 6,
+      NumberHolderD6S6 : 6,
+      NumberHolderTotalS1 : 'DAM',
+      NumberHolderTotalS2 : 'DAM',
+      NumberHolderTotalS3 : 'DAM',
       NumberHolderTotalS4 : 'DAM',
       NumberHolderTotalS5 : 'DAM',
       NumberHolderTotalS6 : 'DAM',
+      NumberHolderTotalD20S1 : 'T20',
+      NumberHolderTotalD20S2 : 'T20',
+      NumberHolderTotalD20S3 : 'T20',
       NumberHolderTotalD20S4 : 'T20',
       NumberHolderTotalD20S5 : 'T20',
       NumberHolderTotalD20S6 : 'T20',
@@ -60,39 +60,39 @@ export default class Kag5 extends React.Component {
     let D20S4 = Math.floor(Math.random() * 20) + 1 ;
     let D20S5 = Math.floor(Math.random() * 20) + 1 ;
     let D20S6 = Math.floor(Math.random() * 20) + 1 ;
-    let D20TotalS1 = D20S1 + 14;
-    let D20TotalS2 = D20S2 + 14;
-    let D20TotalS3 = D20S3 + 14;
-    let D20TotalS4 = D20S4 + 12;
-    let D20TotalS5 = D20S5 + 12;
-    let D20TotalS6 = D20S6 + 12;
-    let diceroll8S1 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S2 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S3 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S4 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S5 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S6 = Math.floor(Math.random() * 6) + 1 ;
-    let TotalS1 = diceroll8S1 + 14;
-    let TotalS2 = diceroll8S2 + 11;
-    let TotalS3 = diceroll8S3 + 11;
-    let TotalS4 = diceroll8S4 + 20;
-    let TotalS5 = diceroll8S5 + 15;
-    let TotalS6 = diceroll8S6 + 15;
+    let D20TotalS1 = D20S1 + 11;
+    let D20TotalS2 = D20S2 + 11;
+    let D20TotalS3 = D20S3 + 11;
+    let D20TotalS4 = D20S4 + 9;
+    let D20TotalS5 = D20S5 + 9;
+    let D20TotalS6 = D20S6 + 9;
+    let diceroll6S1 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll6S2 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll6S3 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll6S4 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll6S5 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll6S6 = Math.floor(Math.random() * 8) + 1 ;
+    let TotalS1 = diceroll6S1 + 12;
+    let TotalS2 = diceroll6S2 + 9;
+    let TotalS3 = diceroll6S3 + 9;
+    let TotalS4 = diceroll6S4 + 18;
+    let TotalS5 = diceroll6S5 + 13;
+    let TotalS6 = diceroll6S6 + 13;
 
   this.setState({
 
     NumberHolderD20S1 : D20S1,
     NumberHolderD20S2 : D20S2,
     NumberHolderD20S3 : D20S3,
-    NumberHolderD20S4 : D20S1,
-    NumberHolderD20S5 : D20S2,
-    NumberHolderD20S6 : D20S3,
-    NumberHolderD8S1 : diceroll8S1,
-    NumberHolderD8S2 : diceroll8S2,
-    NumberHolderD8S3 : diceroll8S3,
-    NumberHolderD8S4 : diceroll8S4,
-    NumberHolderD8S5 : diceroll8S5,
-    NumberHolderD8S6 : diceroll8S6,
+    NumberHolderD20S4 : D20S4,
+    NumberHolderD20S5 : D20S5,
+    NumberHolderD20S6 : D20S6,
+    NumberHolderD6S1 : diceroll6S1,
+    NumberHolderD6S2 : diceroll6S2,
+    NumberHolderD6S3 : diceroll6S3,
+    NumberHolderD6S4 : diceroll6S4,
+    NumberHolderD6S5 : diceroll6S5,
+    NumberHolderD6S6 : diceroll6S6,
     NumberHolderTotalS1 : TotalS1,
     NumberHolderTotalS2 : TotalS2,
     NumberHolderTotalS3 : TotalS3,
@@ -118,7 +118,7 @@ export default class Kag5 extends React.Component {
     const D20S6Style = this.state.NumberHolderD20S6 === 20 | this.state.NumberHolderD20S6 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
 
     return (
-      <ImageBackground source={require('../images/Kag6.jpg')} style={styles.container}>
+      <ImageBackground source={require('../images/Kag5b.jpg')} style={styles.container}>
         <Animatable.View animation="bounce" easing="ease-out" iterationCount="5" style={styles.center} >
             <Button style={styles.button} text="Attack!"
             onPress={() => this.handleButtonPress()}/>
@@ -140,8 +140,8 @@ export default class Kag5 extends React.Component {
               </View>
 
               <View style={styles.bottomItem}>
-                <Animatable.Text animation="fadeInUpBig" style={D20S2Style} adjustsFontSizeToFit
-              numberOfLines={1}>{this.state.NumberHolderD20S2}</Animatable.Text>
+                <Animatable.Text animation="fadeInUpBig" style={D20S3Style} adjustsFontSizeToFit
+              numberOfLines={1}>{this.state.NumberHolderD20S3}</Animatable.Text>
               </View>
 
               <View style={styles.bottomItemTotal}>
@@ -155,8 +155,8 @@ export default class Kag5 extends React.Component {
               </View>
 
               <View style={styles.bottomItem}>
-                <Animatable.Text animation="fadeInUpBig" style={D20S3Style} adjustsFontSizeToFit
-              numberOfLines={1}>{this.state.NumberHolderD20S3}</Animatable.Text>
+                <Animatable.Text animation="fadeInUpBig" style={D20S2Style} adjustsFontSizeToFit
+              numberOfLines={1}>{this.state.NumberHolderD20S2}</Animatable.Text>
               </View>
 
               <View style={styles.bottomItemTotal}>
@@ -168,9 +168,7 @@ export default class Kag5 extends React.Component {
                 <Animatable.Text animation="fadeInUpBig" style={styles.bottomItemInnerTotal} adjustsFontSizeToFit
               numberOfLines={1}>{this.state.NumberHolderTotalS3}</Animatable.Text>
               </View>
-
               <Text style={styles.attackBreak}>-------------------------------------------------</Text>
-
               <View style={styles.bottomItem}>
                 <Animatable.Text animation="fadeInUpBig" style={D20S4Style} adjustsFontSizeToFit
               numberOfLines={1}>{this.state.NumberHolderD20S4}</Animatable.Text>
@@ -233,7 +231,7 @@ const styles = StyleSheet.create({
       textAlign: 'center'
     },
     center: {
-      height: '25%',
+      height: '20%',
       justifyContent: 'center',
       alignContent: 'center',
       alignItems: 'center',

@@ -16,7 +16,7 @@ import { StackNavigator } from 'react-navigation';
 
 const {width, height} = Dimensions.get('window')
 
-export default class Kag7 extends React.Component {
+export default class Kag8 extends React.Component {
   static navigationOptions = {
     title: '12 x4/10 x4',
   };
@@ -78,14 +78,14 @@ export default class Kag7 extends React.Component {
     let D20TotalS6 = D20S6 + 12;
     let D20TotalS7 = D20S7 + 12;
     let D20TotalS8 = D20S8 + 12;
-    let diceroll8S1 = Math.floor(Math.random() * 8) + 1 ;
-    let diceroll8S2 = Math.floor(Math.random() * 8) + 1 ;
-    let diceroll8S3 = Math.floor(Math.random() * 8) + 1 ;
-    let diceroll8S4 = Math.floor(Math.random() * 8) + 1 ;
-    let diceroll8S5 = Math.floor(Math.random() * 8) + 1 ;
-    let diceroll8S6 = Math.floor(Math.random() * 8) + 1 ;
-    let diceroll8S7 = Math.floor(Math.random() * 8) + 1 ;
-    let diceroll8S8 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll8S1 = Math.floor(Math.random() * 6) + 1 ;
+    let diceroll8S2 = Math.floor(Math.random() * 6) + 1 ;
+    let diceroll8S3 = Math.floor(Math.random() * 6) + 1 ;
+    let diceroll8S4 = Math.floor(Math.random() * 6) + 1 ;
+    let diceroll8S5 = Math.floor(Math.random() * 6) + 1 ;
+    let diceroll8S6 = Math.floor(Math.random() * 6) + 1 ;
+    let diceroll8S7 = Math.floor(Math.random() * 6) + 1 ;
+    let diceroll8S8 = Math.floor(Math.random() * 6) + 1 ;
     let TotalS1 = diceroll8S1 + 14;
     let TotalS2 = diceroll8S2 + 14;
     let TotalS3 = diceroll8S3 + 11;

@@ -26,9 +26,9 @@ export default class Kag5 extends React.Component {
     this.state={
 
       // This is the Display number value, prior to button press
-      NumberHolderD20S1 : 'NOR',
-      NumberHolderD20S2 : 'NOR',
-      NumberHolderD20S3 : 'NOR',
+      NumberHolderD20S1 : 'REG',
+      NumberHolderD20S2 : 'REG',
+      NumberHolderD20S3 : 'REG',
       NumberHolderD20S4 : 'PA',
       NumberHolderD20S5 : 'PA',
       NumberHolderD20S6 : 'PA',

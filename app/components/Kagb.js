@@ -5,7 +5,7 @@ import {
   View,
   Image,
   Alert,
-  TouchableOpacitd,
+  TouchableOpacity,
   Dimensions,
   ImageBackground,
        } from 'react-native';
@@ -16,9 +16,9 @@ import { StackNavigator } from 'react-navigation';
 
 const {width, height} = Dimensions.get('window')
 
-export default class Kag2 extends React.Component {
+export default class Kag extends React.Component {
   static navigationOptions = {
-    title: 'E 15 +15| PA 13 +21',
+    title: '12 +12| PA 10 +18',
   };
   constructor(props) {
     super(props);
@@ -28,8 +28,10 @@ export default class Kag2 extends React.Component {
       // This is the Display number value, prior to button press
       NumberHolderD20S1 : 'REG',
       NumberHolderD20S2 : 'PA',
-      NumberHolderD8S1 : '1d8',
-      NumberHolderD8S2 : '1d8',
+      NumberHolderD8S1 : '2d6',
+      NumberHolderD8S2 : '2d6',
+      NumberHolderD8S3 : '2d6',
+      NumberHolderD8S4 : '2d6',
       NumberHolderTotalS1 : 'DAM',
       NumberHolderTotalS2 : 'DAM',
       NumberHolderTotalD20S1 : 'T20',
@@ -40,19 +42,23 @@ export default class Kag2 extends React.Component {
   handleButtonPress=()=> {
     let D20S1 = Math.floor(Math.random() * 20) + 1 ;
     let D20S2 = Math.floor(Math.random() * 20) + 1 ;
-    let D20TotalS1 = D20S1 + 15;
-    let D20TotalS2 = D20S2 + 13;
-    let diceroll6S1a = Math.floor(Math.random() * 8) + 1;
-    let diceroll6S1b = Math.floor(Math.random() * 8) + 1;
-    let TotalS1 = diceroll6S1a + 15;
-    let TotalS2 = diceroll6S1b + 21;
+    let D20TotalS1 = D20S1 + 12;
+    let D20TotalS2 = D20S2 + 10;
+    let diceroll8S1a = Math.floor(Math.random() * 6) + 1;
+    let diceroll8S1b = Math.floor(Math.random() * 6) + 1;
+    let diceroll8S1c = Math.floor(Math.random() * 6) + 1;
+    let diceroll8S1d = Math.floor(Math.random() * 6) + 1;
+    let TotalS1 = diceroll8S1a + diceroll8S1b + 12;
+    let TotalS2 = diceroll8S1d + diceroll8S1d + 18;
 
   this.setState({
 
     NumberHolderD20S1 : D20S1,
     NumberHolderD20S2 : D20S2,
-    NumberHolderD6S1 : diceroll6S1a,
-    NumberHolderD6S2 : diceroll6S1b,
+    NumberHolderD8S1 : diceroll8S1a,
+    NumberHolderD8S2 : diceroll8S1b,
+    NumberHolderD8S1 : diceroll8S1c,
+    NumberHolderD8S2 : diceroll8S1d,
     NumberHolderTotalS1 : TotalS1,
     NumberHolderTotalS2 : TotalS2,
     NumberHolderTotalD20S1 : D20TotalS1,
@@ -66,7 +72,7 @@ export default class Kag2 extends React.Component {
     const D20S2Style = this.state.NumberHolderD20S2 === 20 | this.state.NumberHolderD20S2 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
 
     return (
-      <ImageBackground source={require('../images/Kag2.jpg')} style={styles.container}>
+      <ImageBackground source={require('../images/Kag7b.jpg')} style={styles.container}>
         <Animatable.View animation="bounce" easing="ease-out" iterationCount="5" style={styles.center} >
             <Button style={styles.button} text="Attack!"
             onPress={() => this.handleButtonPress()}/>

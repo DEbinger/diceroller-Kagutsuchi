@@ -29,8 +29,8 @@ export default class Kag5 extends React.Component {
       NumberHolderD20S1 : 'REG',
       NumberHolderD20S2 : 'REG',
       NumberHolderD20S3 : 'REG',
-      NumberHolderD8S1 : 6,
-      NumberHolderD8S3 : 6,
+      NumberHolderD8S1 : 8,
+      NumberHolderD8S3 : 8,
       NumberHolderD8S2 : 8,
       NumberHolderTotalS1 : 'DAM',
       NumberHolderTotalS2 : 'DAM',
@@ -66,18 +66,18 @@ export default class Kag5 extends React.Component {
     let D20TotalS4 = D20S4 + 12;
     let D20TotalS5 = D20S5 + 12;
     let D20TotalS6 = D20S6 + 12;
-    let diceroll8S1 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S2 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S3 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S4 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S5 = Math.floor(Math.random() * 6) + 1 ;
-    let diceroll8S6 = Math.floor(Math.random() * 6) + 1 ;
-    let TotalS1 = diceroll8S1 + 14;
-    let TotalS2 = diceroll8S2 + 11;
-    let TotalS3 = diceroll8S3 + 11;
-    let TotalS4 = diceroll8S4 + 20;
-    let TotalS5 = diceroll8S5 + 15;
-    let TotalS6 = diceroll8S6 + 15;
+    let diceroll8S1 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll8S2 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll8S3 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll8S4 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll8S5 = Math.floor(Math.random() * 8) + 1 ;
+    let diceroll8S6 = Math.floor(Math.random() * 8) + 1 ;
+    let TotalS1 = diceroll8S1 + 15;
+    let TotalS2 = diceroll8S2 + 12;
+    let TotalS3 = diceroll8S3 + 12;
+    let TotalS4 = diceroll8S4 + 21;
+    let TotalS5 = diceroll8S5 + 16;
+    let TotalS6 = diceroll8S6 + 16;
 
   this.setState({
 
@@ -118,7 +118,7 @@ export default class Kag5 extends React.Component {
     const D20S6Style = this.state.NumberHolderD20S6 === 20 | this.state.NumberHolderD20S6 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
 
     return (
-      <ImageBackground source={require('../images/Kag6.jpg')} style={styles.container}>
+      <ImageBackground source={require('../images/Kag6b.jpg')} style={styles.container}>
         <Animatable.View animation="bounce" easing="ease-out" iterationCount="5" style={styles.center} >
             <Button style={styles.button} text="Attack!"
             onPress={() => this.handleButtonPress()}/>

@@ -18,7 +18,7 @@ EStyleSheet.build();
 
 export default class LaylaDARSH extends React.Component {
   static navigationOptions = {
-    title: 'E 15|15+15/13|13+21 ',
+    title: '13|13+12/11|11+18 ',
   };
   constructor(props) {
     super(props);
@@ -38,18 +38,14 @@ export default class LaylaDARSH extends React.Component {
     this.state={
 
       // This is our Display number value, prior to button press
-      NumberHolderD20S1 : 'REG',
-      NumberHolderD20S2 : 'REG',
+      NumberHolderD20S1 : 'NORM',
+      NumberHolderD20S2 : 'NORM',
       NumberHolderD20S3 : 'PA',
       NumberHolderD20S4 : 'PA',
-      NumberHolderD6S1 : 'D6',
-      NumberHolderD6S2 : 'D6',
-      NumberHolderD6S3 : 'D6',
-      NumberHolderD6S4 : 'D6',
-      NumberHolderTotalS1 : 'DAM',
-      NumberHolderTotalS2 : 'DAM',
-      NumberHolderTotalS3 : 'DAM',
-      NumberHolderTotalS4 : 'DAM',
+      NumberHolderD8S1 : 'DAM',
+      NumberHolderD8S2 : 'DAM',
+      NumberHolderD8S3 : 'DAM',
+      NumberHolderD8S4 : 'DAM',
       NumberHolderTotalD20S1 : 'T20',
       NumberHolderTotalD20S2 : 'T20',
       NumberHolderTotalD20S3 : 'T20',
@@ -70,14 +66,18 @@ export default class LaylaDARSH extends React.Component {
     let D20TotalS2 = D20S2 + 13;
     let D20TotalS3 = D20S3 + 11;
     let D20TotalS4 = D20S4 + 11;
-    let D6Sa1 = Math.floor(Math.random()  * 8) +1;
-    let D6Sb1 = Math.floor(Math.random()  * 8) +1;
-    let D6Sa2 = Math.floor(Math.random()  * 8) +1;
-    let D6Sb2 = Math.floor(Math.random()  * 8) +1;
-    let TotalS1 = D6Sa1 + 15;
-    let TotalS2 = D6Sb1 + 15;
-    let TotalS3 = D6Sa2 + 21;
-    let TotalS4 = D6Sb2 + 21;
+    let D8S1 = Math.floor(Math.random()  * 8) + 1;
+    let D8S2 = Math.floor(Math.random()  * 8) + 1;
+    let D8S3 = Math.floor(Math.random()  * 8) + 1;
+    let D8S4 = Math.floor(Math.random()  * 8) + 1;
+    let D8S5 = Math.floor(Math.random()  * 8) + 1;
+    let D8S6 = Math.floor(Math.random()  * 8) + 1;
+    let D8S7 = Math.floor(Math.random()  * 8) + 1;
+    let D8S8 = Math.floor(Math.random()  * 8) + 1;
+    let TotalS1 = D8S1 + D8S2 + 13;
+    let TotalS2 = D8S3 + D8S4 + 19;
+    let TotalS3 = D8S5 + D8S6 + 13;
+    let TotalS4 = D8S7 + D8S8 + 19;
 
   this.setState({
 
@@ -89,14 +89,10 @@ export default class LaylaDARSH extends React.Component {
     NumberHolderTotalD20S2 : D20TotalS2,
     NumberHolderTotalD20S3 : D20TotalS3,
     NumberHolderTotalD20S4 : D20TotalS4,
-    NumberHolderD6S1 : D6Sa1,
-    NumberHolderD6S2 : D6Sb1,
-    NumberHolderD6S3 : D6Sa2,
-    NumberHolderD6S4 : D6Sb2,
-    NumberHolderTotalS1 : TotalS1,
-    NumberHolderTotalS2 : TotalS2,
-    NumberHolderTotalS3 : TotalS3,
-    NumberHolderTotalS4 : TotalS4,
+    NumberHolderD8S1 : TotalS1,
+    NumberHolderD8S2 : TotalS2,
+    NumberHolderD8S3 : TotalS3,
+    NumberHolderD8S4 : TotalS4,
     })
   }
 
@@ -107,7 +103,7 @@ export default class LaylaDARSH extends React.Component {
     const D20S3Style = this.state.NumberHolderD20S3 === 20 | this.state.NumberHolderD20S3 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     const D20S4Style = this.state.NumberHolderD20S4 === 20 | this.state.NumberHolderD20S4 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     return (
-       <ImageBackground source={require('../images/Kag4.jpg')} style={styles.container}>
+       <ImageBackground source={require('../images/Kag3b.jpg')} style={styles.container}>
 
           <Animatable.View ref="view"
             style={styles.center1} >
@@ -144,7 +140,7 @@ export default class LaylaDARSH extends React.Component {
                 iterationCount={5}
                 style={styles.bottomItem}>
                 <Text style={styles.bottomItemInner8} adjustsFontSizeToFit
-                  numberOfLines={1}>{this.state.NumberHolderTotalS1}</Text>
+                  numberOfLines={1}>{this.state.NumberHolderD8S1}</Text>
               </Animatable.View>
 
               <Animatable.View
@@ -175,9 +171,9 @@ export default class LaylaDARSH extends React.Component {
                 iterationCount={5}
                 style={styles.bottomItem}>
                 <Text style={styles.bottomItemInner8} adjustsFontSizeToFit
-                  numberOfLines={1}>{this.state.NumberHolderTotalS2}</Text>
+                  numberOfLines={1}>{this.state.NumberHolderD8S2}</Text>
               </Animatable.View>
-
+              <Text style={styles.attackBreak}>-------------------------------------------------</Text>
               <Animatable.View
                 animation="bounce"
                 easing="ease-in"
@@ -205,7 +201,7 @@ export default class LaylaDARSH extends React.Component {
                 iterationCount={5}
                 style={styles.bottomItem}>
                 <Text style={styles.bottomItemInner8} adjustsFontSizeToFit
-                  numberOfLines={1}>{this.state.NumberHolderTotalS3}</Text>
+                  numberOfLines={1}>{this.state.NumberHolderD8S3}</Text>
               </Animatable.View>
 
               <Animatable.View
@@ -235,7 +231,7 @@ export default class LaylaDARSH extends React.Component {
                 iterationCount={5}
                 style={styles.bottomItem}>
                 <Text style={styles.bottomItemInner8} adjustsFontSizeToFit
-                  numberOfLines={1}>{this.state.NumberHolderTotalS4}</Text>
+                  numberOfLines={1}>{this.state.NumberHolderD8S4}</Text>
               </Animatable.View>
             </View>
       </ImageBackground>
@@ -249,13 +245,16 @@ const styles = StyleSheet.create({
       flexWrap: 'wrap',
       alignItems: 'center',
     },
+    attackBreak: {
+      color: 'red',
+    },
     archer1: {
       flex: 1,
       backgroundColor: '#065143',
     },
     archer2: {
       flex: 1,
-      backgroundColor: '#D6FFDD',
+      backgroundColor: '#D8FFDD',
     },
     archer3: {
       flex: 1,
@@ -275,7 +274,7 @@ const styles = StyleSheet.create({
       height: '33%',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#D6FFDD',
+      backgroundColor: '#D8FFDD',
       flex: 1,
       flexDirection: 'row',
       flexWrap: 'wrap',
@@ -306,7 +305,7 @@ const styles = StyleSheet.create({
       maxWidth: '100%',
     },
     center1: {
-      height: '35%',
+      height: '30%',
       // backgroundColor: '#065143',
       justifyContent: 'center',
       alignContent: 'center',
@@ -314,7 +313,7 @@ const styles = StyleSheet.create({
     },
     center2: {
       height: '20%',
-      // backgroundColor: '#D6FFDD',
+      // backgroundColor: '#D8FFDD',
       justifyContent: 'center',
       alignContent: 'center',
       alignItems: 'center',
@@ -338,7 +337,7 @@ const styles = StyleSheet.create({
     },
     bottom2: {
       height: '57%',
-      // backgroundColor: '#D6FFDD',
+      // backgroundColor: '#D8FFDD',
       flexDirection: 'row',
       flexWrap: 'wrap',
       padding: 2,
@@ -375,7 +374,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       textAlign: 'center',
       fontSize: 45,
-      fontWeight: '900',
+      fontWeight: '700',
       color: '#129490',
     },
     bottomItemInner20picked: {
@@ -387,7 +386,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       textAlign: 'center',
       fontSize: 45,
-      fontWeight: '900',
+      fontWeight: '700',
       color: 'white',
     },
     bottomItemInner8: {
@@ -399,7 +398,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       textAlign: 'center',
       fontSize: 45,
-      fontWeight: '900',
+      fontWeight: '700',
       color: '#8a2be2',
     },
     bottomItemInner4: {
@@ -411,7 +410,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       textAlign: 'center',
       fontSize: 45,
-      fontWeight: '900',
+      fontWeight: '700',
       color: '#065143',
     },
     bottomItemInnerTotalD20: {
@@ -423,7 +422,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       textAlign: 'center',
       fontSize: 45,
-      fontWeight: '900',
+      fontWeight: '700',
       color: '#fff8dc',
     },
 });

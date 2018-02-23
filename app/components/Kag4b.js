@@ -18,7 +18,7 @@ EStyleSheet.build();
 
 export default class LaylaDARSH extends React.Component {
   static navigationOptions = {
-    title: 'E 15|15+15/13|13+21 ',
+    title: 'E 15|15+16/13|13+22 ',
   };
   constructor(props) {
     super(props);
@@ -46,6 +46,10 @@ export default class LaylaDARSH extends React.Component {
       NumberHolderD6S2 : 'D6',
       NumberHolderD6S3 : 'D6',
       NumberHolderD6S4 : 'D6',
+      NumberHolderD6S5 : 'D6',
+      NumberHolderD6S6 : 'D6',
+      NumberHolderD6S7 : 'D6',
+      NumberHolderD6S8 : 'D6',
       NumberHolderTotalS1 : 'DAM',
       NumberHolderTotalS2 : 'DAM',
       NumberHolderTotalS3 : 'DAM',
@@ -70,14 +74,18 @@ export default class LaylaDARSH extends React.Component {
     let D20TotalS2 = D20S2 + 13;
     let D20TotalS3 = D20S3 + 11;
     let D20TotalS4 = D20S4 + 11;
-    let D6Sa1 = Math.floor(Math.random()  * 8) +1;
-    let D6Sb1 = Math.floor(Math.random()  * 8) +1;
-    let D6Sa2 = Math.floor(Math.random()  * 8) +1;
-    let D6Sb2 = Math.floor(Math.random()  * 8) +1;
-    let TotalS1 = D6Sa1 + 15;
-    let TotalS2 = D6Sb1 + 15;
-    let TotalS3 = D6Sa2 + 21;
-    let TotalS4 = D6Sb2 + 21;
+    let D6Sa1 = Math.floor(Math.random()  * 6) +1;
+    let D6Sb1 = Math.floor(Math.random()  * 6) +1;
+    let D6Sa2 = Math.floor(Math.random()  * 6) +1;
+    let D6Sb2 = Math.floor(Math.random()  * 6) +1;
+    let D6Sa3 = Math.floor(Math.random()  * 6) +1;
+    let D6Sb3 = Math.floor(Math.random()  * 6) +1;
+    let D6Sa4 = Math.floor(Math.random()  * 6) +1;
+    let D6Sb4 = Math.floor(Math.random()  * 6) +1;
+    let TotalS1 = D6Sa1 + D6Sb1 + 16;
+    let TotalS2 = D6Sa2 + D6Sb2 + 16;
+    let TotalS3 = D6Sa3 + D6Sb3 + 22;
+    let TotalS4 = D6Sa4 + D6Sb4 + 22;
 
   this.setState({
 
@@ -93,6 +101,10 @@ export default class LaylaDARSH extends React.Component {
     NumberHolderD6S2 : D6Sb1,
     NumberHolderD6S3 : D6Sa2,
     NumberHolderD6S4 : D6Sb2,
+    NumberHolderD6S5 : D6Sa3,
+    NumberHolderD6S6 : D6Sb3,
+    NumberHolderD6S7 : D6Sa4,
+    NumberHolderD6S8 : D6Sb4,
     NumberHolderTotalS1 : TotalS1,
     NumberHolderTotalS2 : TotalS2,
     NumberHolderTotalS3 : TotalS3,
@@ -107,7 +119,7 @@ export default class LaylaDARSH extends React.Component {
     const D20S3Style = this.state.NumberHolderD20S3 === 20 | this.state.NumberHolderD20S3 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     const D20S4Style = this.state.NumberHolderD20S4 === 20 | this.state.NumberHolderD20S4 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     return (
-       <ImageBackground source={require('../images/Kag4.jpg')} style={styles.container}>
+       <ImageBackground source={require('../images/Kag4b.jpg')} style={styles.container}>
 
           <Animatable.View ref="view"
             style={styles.center1} >
@@ -177,7 +189,7 @@ export default class LaylaDARSH extends React.Component {
                 <Text style={styles.bottomItemInner8} adjustsFontSizeToFit
                   numberOfLines={1}>{this.state.NumberHolderTotalS2}</Text>
               </Animatable.View>
-
+              <Text style={styles.attackBreak}>-------------------------------------------------</Text>
               <Animatable.View
                 animation="bounce"
                 easing="ease-in"
@@ -248,6 +260,9 @@ const styles = StyleSheet.create({
       flex: 1,
       flexWrap: 'wrap',
       alignItems: 'center',
+    },
+    attackBreak: {
+      color: 'red',
     },
     archer1: {
       flex: 1,
