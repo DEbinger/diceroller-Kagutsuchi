@@ -95,7 +95,7 @@ export default class LaylaDARSH extends React.Component {
     const D20S3Style = this.state.NumberHolderD20S3 === 20 | this.state.NumberHolderD20S3 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     const D20S4Style = this.state.NumberHolderD20S4 === 20 | this.state.NumberHolderD20S4 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     return (
-       <ImageBackground source={require('../images/efreeti3.jpg')} style={styles.container}>
+       <ImageBackground source={require('../images/Kag3.jpeg')} style={styles.container}>
 
           <Animatable.View ref="view"
             style={styles.center1} >
@@ -294,7 +294,7 @@ const styles = StyleSheet.create({
       maxWidth: '100%',
     },
     center1: {
-      height: '45%',
+      height: '30%',
       // backgroundColor: '#065143',
       justifyContent: 'center',
       alignContent: 'center',

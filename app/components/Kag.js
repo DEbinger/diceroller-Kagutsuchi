@@ -66,7 +66,7 @@ export default class Kag extends React.Component {
     const D20S2Style = this.state.NumberHolderD20S2 === 20 | this.state.NumberHolderD20S2 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
 
     return (
-      <ImageBackground source={require('../images/Efreeti.jpg')} style={styles.container}>
+      <ImageBackground source={require('../images/Kag.jpg')} style={styles.container}>
         <Animatable.View animation="bounce" easing="ease-out" iterationCount="5" style={styles.center} >
             <Button style={styles.button} text="Attack!"
             onPress={() => this.handleButtonPress()}/>
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
       textAlign: 'center'
     },
     center: {
-      height: '50%',
+      height: '40%',
       justifyContent: 'center',
       alignContent: 'center',
       alignItems: 'center',

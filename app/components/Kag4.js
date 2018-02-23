@@ -18,7 +18,7 @@ EStyleSheet.build();
 
 export default class LaylaDARSH extends React.Component {
   static navigationOptions = {
-    title: 'E 13|13+13/11|11+19 ',
+    title: 'E 15|15+15/13|13+21 ',
   };
   constructor(props) {
     super(props);
@@ -82,10 +82,10 @@ export default class LaylaDARSH extends React.Component {
     let D6Sb3 = Math.floor(Math.random()  * 6) +1;
     let D6Sa4 = Math.floor(Math.random()  * 6) +1;
     let D6Sb4 = Math.floor(Math.random()  * 6) +1;
-    let TotalS1 = D6Sa1 + D6Sb1 + 13;
-    let TotalS2 = D6Sa2 + D6Sb2 + 13;
-    let TotalS3 = D6Sa3 + D6Sb3 + 19;
-    let TotalS4 = D6Sa4 + D6Sb4 + 19;
+    let TotalS1 = D6Sa1 + D6Sb1 + 15;
+    let TotalS2 = D6Sa2 + D6Sb2 + 15;
+    let TotalS3 = D6Sa3 + D6Sb3 + 21;
+    let TotalS4 = D6Sa4 + D6Sb4 + 21;
 
   this.setState({
 
@@ -119,7 +119,7 @@ export default class LaylaDARSH extends React.Component {
     const D20S3Style = this.state.NumberHolderD20S3 === 20 | this.state.NumberHolderD20S3 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     const D20S4Style = this.state.NumberHolderD20S4 === 20 | this.state.NumberHolderD20S4 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     return (
-       <ImageBackground source={require('../images/efreeti4.jpg')} style={styles.container}>
+       <ImageBackground source={require('../images/Kag4.jpg')} style={styles.container}>
 
           <Animatable.View ref="view"
             style={styles.center1} >
@@ -318,7 +318,7 @@ const styles = StyleSheet.create({
       maxWidth: '100%',
     },
     center1: {
-      height: '45%',
+      height: '35%',
       // backgroundColor: '#065143',
       justifyContent: 'center',
       alignContent: 'center',

@@ -10,15 +10,14 @@ import {
   Dimensions,
        } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import Login from './app/components/Login';
-import Laylo from './app/components/Laylo';
-import Laylo2 from './app/components/Laylo2';
-import Laylo3 from './app/components/Laylo3';
-import Laylo4 from './app/components/Laylo4';
-import Laylo5 from './app/components/Laylo5';
-import Laylo6 from './app/components/Laylo6';
-import Laylo7 from './app/components/Laylo7';
-import Laylo8 from './app/components/Laylo8';
+import Kag from './app/components/Kag';
+import Kag2 from './app/components/Kag2';
+import Kag3 from './app/components/Kag3';
+import Kag4 from './app/components/Kag4';
+import Kag5 from './app/components/Kag5';
+import Kag6 from './app/components/Kag6';
+import Kag7 from './app/components/Kag7';
+import Kag8 from './app/components/Kag8';
 import * as Animatable from 'react-native-animatable';
 import { StackNavigator } from 'react-navigation';
 
@@ -28,7 +27,7 @@ class LogoTitle1 extends React.Component {
   render() {
     return (
       <Image style={styles.logo}
-        source={require('./app/images/Laylo.jpg')}
+        source={require('./app/images/Kag.jpg')}
       />
     );
   }
@@ -38,7 +37,7 @@ class LogoTitle2 extends React.Component {
   render() {
     return (
       <Image style={styles.logo}
-        source={require('./app/images/Laylo2.jpeg')}
+        source={require('./app/images/Kag2.jpg')}
       />
     );
   }
@@ -48,7 +47,7 @@ class LogoTitle3 extends React.Component {
   render() {
     return (
       <Image style={styles.logo}
-        source={require('./app/images/Laylo3.jpg')}
+        source={require('./app/images/Kag3.jpeg')}
       />
     );
   }
@@ -58,7 +57,7 @@ class LogoTitle4 extends React.Component {
   render() {
     return (
       <Image style={styles.logo}
-        source={require('./app/images/Laylo4.jpg')}
+        source={require('./app/images/Kag4.jpg')}
       />
     );
   }
@@ -68,7 +67,7 @@ class LogoTitle5 extends React.Component {
   render() {
     return (
       <Image style={styles.logo}
-        source={require('./app/images/Laylo5.jpg')}
+        source={require('./app/images/Kag5.png')}
       />
     );
   }
@@ -78,7 +77,7 @@ class LogoTitle6 extends React.Component {
   render() {
     return (
       <Image style={styles.logo}
-        source={require('./app/images/Laylo6.jpg')}
+        source={require('./app/images/Kag6.jpg')}
       />
     );
   }
@@ -88,7 +87,7 @@ class LogoTitle7 extends React.Component {
   render() {
     return (
       <Image style={styles.logo}
-        source={require('./app/images/Laylo7.jpg')}
+        source={require('./app/images/Kag7.jpg')}
       />
     );
   }
@@ -98,15 +97,15 @@ class LogoTitle8 extends React.Component {
   render() {
     return (
       <Image style={styles.logo}
-        source={require('./app/images/Laylo8.jpg')}
+        source={require('./app/images/Kag8.jpg')}
       />
     );
   }
 }
 
-class LayloHomeScreen extends React.Component {
+class KagHomeScreen extends React.Component {
   static navigationOptions = {
-    title: 'LAYLO',
+    title: 'KAGUTSUCHI',
   };
   render (){
     const { navigate } = this.props.navigation;
@@ -114,28 +113,28 @@ class LayloHomeScreen extends React.Component {
       <View style={styles.container}>
         <ScrollView style={styles.homeContainer}>
           <Text style={styles.textStyle}
-            onPress= { ()=> navigate('Laylo')}><LogoTitle1 />{"\n"}Flank/Charge{"\n"}/Canny Tumble{"\n"}{"\n"}
+            onPress= { ()=> navigate('Kag')}><LogoTitle1 />Normal Longspear{"\n"}Power Attack Longspear{"\n"}
           </Text>
           <Text style={styles.textStyle}
-            onPress= { ()=> navigate('Laylo2')}>{"\n"}{"\n"}<LogoTitle2 />{"\n"}Haste{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}
+            onPress= { ()=> navigate('Kag2')}><LogoTitle2 />Normal Longspear{"\n"}Power Attack Longspear{"\n"}Song{"\n"}
           </Text>
           <Text style={styles.textStyle}
-            onPress= { ()=> navigate('Laylo3')}><LogoTitle3 />{"\n"}Song{"\n"}{"\n"}{"\n"}
+            onPress= { ()=> navigate('Kag3')}><LogoTitle3 />Normal Longspear{"\n"}Power Attack Longspear{"\n"}Haste{"\n"}
           </Text>
           <Text style={styles.textStyle}
-            onPress= { ()=> navigate('Laylo4')}>{"\n"}{"\n"}<LogoTitle4 />{"\n"}Haste{"\n"}Song{"\n"}{"\n"}{"\n"}{"\n"}
+            onPress= { ()=> navigate('Kag4')}><LogoTitle4 />Normal Longspear{"\n"}Power Attack Longspear{"\n"}Song{"\n"}Haste{"\n"}
           </Text>
           <Text style={styles.textStyle}
-            onPress= { ()=> navigate('Laylo5')}><LogoTitle5 />{"\n"}Haste{"\n"}Song{"\n"}Flank/Charge{"\n"}
+            onPress= { ()=> navigate('Kag5')}><LogoTitle5 />Bite and Claw x2{"\n"}Bite and Clawx2 Power Attack{"\n"}
           </Text>
           <Text style={styles.textStyle}
-            onPress= { ()=> navigate('Laylo6')}>{"\n"}{"\n"}<LogoTitle6 />{"\n"}Haste{"\n"}Song{"\n"}Fighting{"\n"}Defensively{"\n"}{"\n"}
+            onPress= { ()=> navigate('Kag6')}><LogoTitle6 />Bite and Claw x2{"\n"}Bite and Clawx2 Power Attack{"\n"}Song{"\n"}
           </Text>
           <Text style={styles.textStyle}
-            onPress= { ()=> navigate('Laylo7')}>{"\n"}{"\n"}<LogoTitle7 />{"\n"}Two Weapon Fighting{"\n"}{"\n"}
+            onPress= { ()=> navigate('Kag7')}><LogoTitle7 />Bite and Claw x2{"\n"}Bite and Clawx2 Power Attack{"\n"}Haste{"\n"}
           </Text>
           <Text style={styles.textStyle}
-            onPress= { ()=> navigate('Laylo8')}>{"\n"}{"\n"}<LogoTitle8 />{"\n"}Haste{"\n"}Song{"\n"}Two Weapon Fighting{"\n"}{"\n"}
+            onPress= { ()=> navigate('Kag8')}><LogoTitle8 />Bite and Claw x2{"\n"}Bite and Clawx2 Power Attack{"\n"}Song{"\n"}Haste{"\n"}
           </Text>
         </ScrollView>
       </View>
@@ -145,15 +144,15 @@ class LayloHomeScreen extends React.Component {
 
 const NavigationApp = StackNavigator({
   // Home: { screen: Login },
-  LayloHome: { screen: LayloHomeScreen },
-  Laylo: { screen: Laylo },
-  Laylo2: { screen: Laylo2 },
-  Laylo3: { screen: Laylo3 },
-  Laylo4: { screen: Laylo4 },
-  Laylo5: { screen: Laylo5 },
-  Laylo6: { screen: Laylo6 },
-  Laylo7: { screen: Laylo7 },
-  Laylo8: { screen: Laylo8 },
+  KagHome: { screen: KagHomeScreen },
+  Kag: { screen: Kag },
+  Kag2: { screen: Kag2 },
+  Kag3: { screen: Kag3 },
+  Kag4: { screen: Kag4 },
+  Kag5: { screen: Kag5 },
+  Kag6: { screen: Kag6 },
+  Kag7: { screen: Kag7 },
+  Kag8: { screen: Kag8 },
   }, {
     navigationOptions: {
       headerStyle: {
@@ -165,15 +164,15 @@ const NavigationApp = StackNavigator({
 export default class App extends React.Component {
   render() {
     return <NavigationApp />;
-          <LayloHomeScreen />;
-          <Laylo />;
-          <Laylo2 />;
-          <Laylo3 />;
-          <Laylo4 />;
-          <Laylo5 />;
-          <Laylo6 />;
-          <Laylo7 />;
-          <Laylo8 />;
+          <KagHomeScreen />;
+          <Kag />;
+          <Kag2 />;
+          <Kag3 />;
+          <Kag4 />;
+          <Kag5 />;
+          <Kag6 />;
+          <Kag7 />;
+          <Kag8 />;
   }
 }
 
@@ -183,7 +182,7 @@ const styles = StyleSheet.create({
       flex: 1,
       flexDirection: 'column',
       flexWrap: 'wrap',
-      backgroundColor: '#00047A',
+      backgroundColor: 'firebrick',
       alignContent: 'center',
       padding: 5,
     },
@@ -191,7 +190,7 @@ const styles = StyleSheet.create({
       flex: 1,
       flexDirection: 'column',
       flexWrap: 'wrap',
-      backgroundColor: '#00047A',
+      backgroundColor: 'firebrick',
       alignContent: 'center',
       alignSelf: 'center',
       padding: 5,

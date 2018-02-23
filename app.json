@@ -5,6 +5,9 @@
     "description": "A dice rolling app for Kagutsuchi the Firelord.",
     "sdkVersion": "25.0.0",
     "version": "1.0.0",
+    "ios": {
+      "bundleIdentifier": "com.davidebinger.dicerollerkagutsuchi"
+    },
     "android": {
       "package": "com.davidebinger.dicerollerkagutsuchi"
     }

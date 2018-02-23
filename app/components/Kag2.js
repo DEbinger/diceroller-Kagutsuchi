@@ -18,7 +18,7 @@ const {width, height} = Dimensions.get('window')
 
 export default class Kag2 extends React.Component {
   static navigationOptions = {
-    title: 'E 12 +13| PA 10 +19',
+    title: 'E 15 +15| PA 13 +21',
   };
   constructor(props) {
     super(props);
@@ -42,14 +42,14 @@ export default class Kag2 extends React.Component {
   handleButtonPress=()=> {
     let D20S1 = Math.floor(Math.random() * 20) + 1 ;
     let D20S2 = Math.floor(Math.random() * 20) + 1 ;
-    let D20TotalS1 = D20S1 + 12;
-    let D20TotalS2 = D20S2 + 10;
+    let D20TotalS1 = D20S1 + 15;
+    let D20TotalS2 = D20S2 + 13;
     let diceroll6S1a = Math.floor(Math.random() * 6) + 1 ;
     let diceroll6S1b = Math.floor(Math.random() * 6) + 1
     let diceroll6S2a = Math.floor(Math.random() * 6) + 1 ;
     let diceroll6S2b = Math.floor(Math.random() * 6) + 1 ;
-    let TotalS1 = diceroll6S1a + diceroll6S1b + 13;
-    let TotalS2 = diceroll6S2a + diceroll6S2b + 19;
+    let TotalS1 = diceroll6S1a + diceroll6S1b + 15;
+    let TotalS2 = diceroll6S2a + diceroll6S2b + 21;
 
   this.setState({
 
@@ -72,7 +72,7 @@ export default class Kag2 extends React.Component {
     const D20S2Style = this.state.NumberHolderD20S2 === 20 | this.state.NumberHolderD20S2 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
 
     return (
-      <ImageBackground source={require('../images/Efreeti2.jpg')} style={styles.container}>
+      <ImageBackground source={require('../images/Kag2.jpg')} style={styles.container}>
         <Animatable.View animation="bounce" easing="ease-out" iterationCount="5" style={styles.center} >
             <Button style={styles.button} text="Attack!"
             onPress={() => this.handleButtonPress()}/>
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
       textAlign: 'center'
     },
     center: {
-      height: '50%',
+      height: '40%',
       justifyContent: 'center',
       alignContent: 'center',
       alignItems: 'center',

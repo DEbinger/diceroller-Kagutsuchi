@@ -18,7 +18,7 @@ const {width, height} = Dimensions.get('window')
 
 export default class Kag7 extends React.Component {
   static navigationOptions = {
-    title: '12|12|12|12/10|10|10|10',
+    title: '12 x4/10 x4',
   };
   constructor(props) {
     super(props);
@@ -144,7 +144,7 @@ export default class Kag7 extends React.Component {
     const D20S8Style = this.state.NumberHolderD20S8 === 20 | this.state.NumberHolderD20S8 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
 
     return (
-      <ImageBackground source={require('../images/efreeti7.jpg')} style={styles.container}>
+      <ImageBackground source={require('../images/Kag7.jpg')} style={styles.container}>
         <Animatable.View animation="bounce" easing="ease-out" iterationCount="5" style={styles.center} >
             <Button style={styles.button} text="Attack!"
             onPress={() => this.handleButtonPress()}/>

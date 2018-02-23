@@ -18,7 +18,7 @@ const {width, height} = Dimensions.get('window')
 
 export default class Kag7 extends React.Component {
   static navigationOptions = {
-    title: '12|12|12|12/10|10|10|10',
+    title: '12 x4/10 x4',
   };
   constructor(props) {
     super(props);
@@ -70,14 +70,14 @@ export default class Kag7 extends React.Component {
     let D20S6 = Math.floor(Math.random() * 20) + 1 ;
     let D20S7 = Math.floor(Math.random() * 20) + 1 ;
     let D20S8 = Math.floor(Math.random() * 20) + 1 ;
-    let D20TotalS1 = D20S1 + 11;
-    let D20TotalS2 = D20S2 + 11;
-    let D20TotalS3 = D20S3 + 11;
-    let D20TotalS4 = D20S4 + 11;
-    let D20TotalS5 = D20S5 + 9;
-    let D20TotalS6 = D20S6 + 9;
-    let D20TotalS7 = D20S7 + 9;
-    let D20TotalS8 = D20S8 + 9;
+    let D20TotalS1 = D20S1 + 14;
+    let D20TotalS2 = D20S2 + 14;
+    let D20TotalS3 = D20S3 + 14;
+    let D20TotalS4 = D20S4 + 14;
+    let D20TotalS5 = D20S5 + 12;
+    let D20TotalS6 = D20S6 + 12;
+    let D20TotalS7 = D20S7 + 12;
+    let D20TotalS8 = D20S8 + 12;
     let diceroll8S1 = Math.floor(Math.random() * 8) + 1 ;
     let diceroll8S2 = Math.floor(Math.random() * 8) + 1 ;
     let diceroll8S3 = Math.floor(Math.random() * 8) + 1 ;
@@ -86,14 +86,14 @@ export default class Kag7 extends React.Component {
     let diceroll8S6 = Math.floor(Math.random() * 8) + 1 ;
     let diceroll8S7 = Math.floor(Math.random() * 8) + 1 ;
     let diceroll8S8 = Math.floor(Math.random() * 8) + 1 ;
-    let TotalS1 = diceroll8S1 + 12;
-    let TotalS2 = diceroll8S2 + 12;
-    let TotalS3 = diceroll8S3 + 9;
-    let TotalS4 = diceroll8S4 + 9;
-    let TotalS5 = diceroll8S5 + 18;
-    let TotalS6 = diceroll8S6 + 18;
-    let TotalS7 = diceroll8S7 + 13;
-    let TotalS8 = diceroll8S8 + 13;
+    let TotalS1 = diceroll8S1 + 14;
+    let TotalS2 = diceroll8S2 + 14;
+    let TotalS3 = diceroll8S3 + 11;
+    let TotalS4 = diceroll8S4 + 11;
+    let TotalS5 = diceroll8S5 + 20;
+    let TotalS6 = diceroll8S6 + 20;
+    let TotalS7 = diceroll8S7 + 15;
+    let TotalS8 = diceroll8S8 + 15;
 
   this.setState({
 
@@ -144,7 +144,7 @@ export default class Kag7 extends React.Component {
     const D20S8Style = this.state.NumberHolderD20S8 === 20 | this.state.NumberHolderD20S8 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
 
     return (
-      <ImageBackground source={require('../images/efreeti8.jpg')} style={styles.container}>
+      <ImageBackground source={require('../images/Kag8.jpg')} style={styles.container}>
         <Animatable.View animation="bounce" easing="ease-out" iterationCount="5" style={styles.center} >
             <Button style={styles.button} text="Attack!"
             onPress={() => this.handleButtonPress()}/>
